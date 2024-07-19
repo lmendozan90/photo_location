@@ -1,2 +1,27 @@
-<h1>Photos#show</h1>
-<p>Find me in app/views/photos/show.html.erb</p>
+<h1>Photo Details</h1>
+
+<% if @photo.image.attached? %>
+  <%= image_tag @photo.image %>
+  <p>Latitude: <%= @photo.latitude %></p>
+  <p>Longitude: <%= @photo.longitude %></p>
+
+  <div id='map' style='height: 400px;'></div>
+
+  <script>
+    mapboxgl.accessToken = 'your_mapbox_access_token';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [<%= @photo.longitude %>, <%= @photo.latitude %>],
+      zoom: 12
+    });
+
+    new mapboxgl.Marker()
+      .setLngLat([<%= @photo.longitude %>, <%= @photo.latitude %>])
+      .addTo(map);
+  </script>
+<% else %>
+  <p>No image uploaded</p>
+<% end %>
+
+<%= link_to 'Back', photos_path %>
