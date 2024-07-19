@@ -54,6 +54,7 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.9.2, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.0, ruby-3.3.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="exifr (v1.4.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.5, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v2.0.1, ruby-3.3.0-p0) [gem]" level="application" />
@@ -63,8 +64,10 @@
     <orderEntry type="library" scope="PROVIDED" name="logger (v1.6.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.22.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, ruby-3.3.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mapbox-gl-rails (v2.9.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.4, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, ruby-3.3.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v5.0.0, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.24.1, ruby-3.3.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.7.2, ruby-3.3.0-p0) [gem]" level="application" />
