@@ -1,2 +1,32 @@
-<h1>Photos#index</h1>
-<p>Find me in app/views/photos/index.html.erb</p>
+<h1>Uploaded Photos</h1>
+
+<%= link_to 'Upload a new photo', new_photo_path %>
+
+<table>
+  <thead>
+  <tr>
+    <th>Photo</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @photos.each do |photo| %>
+    <tr>
+      <td>
+        <% if photo.image.attached? %>
+          <%= image_tag photo.image, size: "100x100" %>
+        <% else %>
+          No image
+        <% end %>
+      </td>
+      <td><%= photo.latitude %></td>
+      <td><%= photo.longitude %></td>
+      <td>
+        <%= link_to 'Show', photo_path(photo) %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
